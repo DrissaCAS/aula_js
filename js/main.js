@@ -1,6 +1,26 @@
 function clicou(){
-   document.getElementById("agradecimento"); 
+   document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar!</b>";
+   console.log(document.getElementById("agradecimento")); 
     //alert("Obrigada por clicar!");
+}
+
+function redirection(){
+    window.open("https://digitalinnovation.one/sign-up?ref=TQGOYNU5LQ");
+    //window.location.href = "https://digitalinnovation.one/sign-up?ref=TQGOYNU5LQ";
+}
+
+function trocar(elemento){
+    elemento.innerHTML = "<b>Obrigado por passar o mouse.</b>";
+    //document.getElementById("mouseover").innerHTML = "Obrigado por passar o mouse."
+    //alert("trocar texto");
+}
+
+function voltar(elemento){
+    elemento.innerHTML = "Passe o mouse aqui.";
+    //document.getElementById("mouseover").innerHTML = "Passe o mouse aqui."
+}
+function funcaoChange(elemento){
+    console.log(elemento.value); 
 }
 
 /*function soma(n1, n2){
